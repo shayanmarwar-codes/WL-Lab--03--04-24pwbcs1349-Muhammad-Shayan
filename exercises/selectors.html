@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>CSS Selectors Practice</title>
+
+<link rel="stylesheet" href="../styles/main.css">
+
+<style>
+
+p{
+color:green;
+}
+
+.highlight{
+background:yellow;
+}
+
+#special{
+color:red;
+}
+
+*{
+font-family:Arial;
+}
+
+h1,h2{
+color:blue;
+}
+
+input[type]{
+border:2px solid black;
+}
+
+input[type="text"]{
+background:#f0f0f0;
+}
+
+a[href*="google"]{
+color:purple;
+}
+
+div p{
+color:orange;
+}
+
+div > span{
+color:blue;
+}
+
+h2 + p{
+background:lightgray;
+}
+
+h3 ~ p{
+font-style:italic;
+}
+
+a:hover{
+color:red;
+}
+
+input:focus{
+background:yellow;
+}
+
+li:first-child{
+color:green;
+}
+
+li:last-child{
+color:blue;
+}
+
+li:nth-child(2){
+font-weight:bold;
+}
+
+p::first-letter{
+font-size:30px;
+color:red;
+}
+
+p::after{
+content:" ✔";
+color:green;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>CSS Selectors Demonstration</h1>
+
+<p>This paragraph shows element selector.</p>
+
+<p class="highlight">This paragraph uses class selector.</p>
+
+<p id="special">This paragraph uses ID selector.</p>
+
+<h2>Attribute Selector</h2>
+
+<input type="text" placeholder="Name">
+<input type="password">
+
+<p>
+Visit
+<a href="https://google.com">Google</a>
+</p>
+
+<h2>Combinator Example</h2>
+
+<div>
+
+<p>Paragraph inside div</p>
+
+<span>Child span element</span>
+
+</div>
+
+<h2>Sibling Example</h2>
+
+<p>Paragraph after h2</p>
+
+<h3>Heading</h3>
+
+<p>Sibling paragraph</p>
+<p>Another sibling paragraph</p>
+
+<h2>Pseudo Classes</h2>
+
+<ul>
+
+<li>Item one</li>
+<li>Item two</li>
+<li>Item three</li>
+
+</ul>
+
+</body>
+
+</html>
