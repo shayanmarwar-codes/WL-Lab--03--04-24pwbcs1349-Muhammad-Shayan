@@ -91,3 +91,55 @@ transform:rotate(45deg);
 .combo:hover{
 transform:rotate(20deg) scale(1.2) translateY(-10px);
 }
+.advanced-effects{
+text-align:center;
+margin-top:30px;
+}
+
+.gradient-text{
+font-size:30px;
+background:linear-gradient(to right, red, orange, blue);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.shadow-box{
+width:200px;
+margin:20px auto;
+padding:20px;
+background:white;
+box-shadow:0 0 15px rgba(0,0,0,0.5);
+}
+
+.loading{
+width:50px;
+height:50px;
+border:6px solid lightgray;
+border-top:6px solid steelblue;
+border-radius:50%;
+margin:20px auto;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+}
+
+.clip-text{
+font-size:28px;
+font-weight:bold;
+background:url("../images/backgrounds/bg1.jpg");
+background-size:cover;
+-webkit-background-clip:text;
+color:transparent;
+margin:20px;
+}
+
+.custom-check input{
+margin-right:8px;
+}
+
+.custom-radio input{
+margin-right:8px;
+}
