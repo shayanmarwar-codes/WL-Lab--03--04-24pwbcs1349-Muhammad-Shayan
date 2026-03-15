@@ -214,3 +214,61 @@ margin:5px;
 .dropdown-menu a:hover{
   background:#666;
 }
+/* 11 */
+
+body{
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.portfolio-header{
+    background: steelblue;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.portfolio-nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:0;
+    margin:10px 0 0 0;
+}
+
+.portfolio-nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.portfolio-nav a:hover{
+    color:orange;
+}
+
+section{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.portfolio-gallery .gallery{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.portfolio-gallery img{
+    width:200px;
+    height:150px;
+    object-fit:cover;
+    transition:0.4s;
+}
+
+.portfolio-gallery img:hover{
+    transform:scale(1.05);
+    box-shadow: 3px 3px 15px gray;
+}
